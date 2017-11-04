@@ -49,9 +49,13 @@ header {
 //
 
 h1 {
+  color: #fff;
+  position: absolute;
   font-family: 'gorillaz1regular';
   font-size: 4rem;
-  padding-top: 20px; 
+  transform: rotate(270deg);
+  bottom: 20%;
+  left: -15%;
 }
 
 // 
@@ -67,4 +71,14 @@ img {
 li {
   list-style: none;
   display: inline-block;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4rem;
+    position: absolute;
+    transform: initial;
+    left: 0;
+    bottom: 0;
+  }
 }
